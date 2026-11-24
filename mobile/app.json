@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "Wachemo University Weather Station",
+    "slug": "wachemo-weather-station",
+    "scheme": "wachemo-weather",
+    "version": "2.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "icon": "./assets/icon.png",
+    "backgroundColor": "#0b2a55",
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "ios": {
+      "bundleIdentifier": "et.edu.wachemo.weatherstation",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "et.edu.wachemo.weatherstation",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0b2a55"
+      }
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 180,
+          "resizeMode": "contain",
+          "backgroundColor": "#0b2a55"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "6a6281f5-171d-4d64-9029-8c06bcb4cc8e"
+      }
+    }
+  }
+}
