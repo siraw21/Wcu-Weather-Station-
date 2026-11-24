@@ -1,0 +1,113 @@
+
+# ==========================================
+# 1. Environment variables and secrets
+# ==========================================
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Local firmware configuration and credentials
+secrets.h
+credentials.h
+config.local.h
+
+# ==========================================
+# 2. Node.js dependencies
+# ==========================================
+node_modules/
+**/node_modules/
+
+# ==========================================
+# 3. Build outputs
+# ==========================================
+dist/
+**/dist/
+build/
+**/build/
+out/
+
+# ==========================================
+# 4. TypeScript
+# ==========================================
+*.tsbuildinfo
+
+# ==========================================
+# 5. SQLite database files
+# ==========================================
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# ==========================================
+# 6. Application logs
+# ==========================================
+*.log
+logs/
+**/logs/
+
+# ==========================================
+# 7. Expo / React Native
+# ==========================================
+.expo/
+.expo-shared/
+web-build/
+expo-env.d.ts
+
+# ==========================================
+# 8. ESP32 / PlatformIO
+# ==========================================
+.pio/
+.platformio/
+firmware/**/.pio/
+
+# Arduino build artifacts
+*.elf
+*.hex
+*.bin
+*.map
+*.o
+*.a
+
+# ==========================================
+# 9. Testing and coverage
+# ==========================================
+coverage/
+.nyc_output/
+test-results/
+
+# ==========================================
+# 10. Debugging and temporary files
+# ==========================================
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+.DS_Store
+Thumbs.db
+
+# ==========================================
+# 11. IDE and editor settings
+# ==========================================
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# ==========================================
+# 12. Package manager and cache files
+# ==========================================
+.npm/
+.cache/
+.parcel-cache/
+.turbo/
+
+# ==========================================
+# 13. Operating system files
+# ==========================================
+desktop.ini
+$RECYCLE.BIN/
